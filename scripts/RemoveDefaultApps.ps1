@@ -52,7 +52,7 @@ $applicationList = @(
 	"*Keeper*"
 	"*Netflix*"
 	"*Twitter*"
-	"*Plex*"
+	# "*Plex*"
 	"*.Duolingo-LearnLanguagesforFree"
 	"*.EclipseManager"
 	"ActiproSoftwareLLC.562882FEEB491" # Code Writer
