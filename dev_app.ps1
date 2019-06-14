@@ -1,6 +1,7 @@
 # Description: Boxstarter Script
 # Author: Microsoft
 # Common settings for azure devops
+choco config set cacheLocation d:\chocolatey
 
 Disable-UAC
 $ConfirmPreference = "None" #ensure installing powershell modules don't prompt on needed dependencies
@@ -20,14 +21,6 @@ function executeScript {
     Param ([string]$script)
     write-host "executing $helperUri/$script ..."
 	iex ((new-object net.webclient).DownloadString("$helperUri/$script"))
-}
-
-if((test-path -path d:\) ) {
-write-host "found d drive"
-}
-
-if(!(test-path -path d:\Downloads) ) {
-write-host "didn't find downloads "
 }
 
 if((test-path -path d:\) -and !(test-path -path d:\Downloads)) {
