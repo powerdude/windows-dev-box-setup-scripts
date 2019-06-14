@@ -22,7 +22,16 @@ function executeScript {
 	iex ((new-object net.webclient).DownloadString("$helperUri/$script"))
 }
 
+if((test-path -path d:\) ) {
+write-host "found d drive"
+}
+
+if(!(test-path -path d:\Downloads) ) {
+write-host "didn't find downloads "
+}
+
 if((test-path -path d:\) -and !(test-path -path d:\Downloads)) {
+write-host "moving libraries..."
 Move-LibraryDirectory "My Video" "D:\Videos"
 Move-LibraryDirectory "My Pictures" "D:\Pictures"
 Move-LibraryDirectory "Desktop" "D:\Desktop"
@@ -77,7 +86,7 @@ choco install -y visualstudio2019-workload-netcrossplat
 #choco install -y visualstudio2019-workload-nativedesktop
 
 #executeScript "WindowsTemplateStudio.ps1";
-executeScript "GetUwpSamplesOffGithub.ps1";
+#executeScript "GetUwpSamplesOffGithub.ps1";
 
 choco install -y chocolateygui
 choco install -y revo-uninstaller
