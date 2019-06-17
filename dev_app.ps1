@@ -87,7 +87,7 @@ choco install -y revo-uninstaller
 #Other essential tools
 choco install -y dontnet3.5
 #choco install -y adobereader
-choco install -y rdcman
+choco install -y rdmfree #rdcman
 choco install -y flashplayerplugin
 choco install -y autohotkey
 #choco install -y autohotkey-compiler
