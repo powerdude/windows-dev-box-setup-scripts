@@ -50,10 +50,10 @@ executeScript "Browsers.ps1";
 #executeScript "Docker.ps1";
 
 choco install -y powershell-core
-choco install -y azure-cli
+#choco install -y azure-cli
 #choco install -y azcopy
 #choco install -y azurepowershell
-Install-Module -Force Az
+#Install-Module -Force Az
 choco install -y microsoftazurestorageexplorer
 choco install -y terraform
 
