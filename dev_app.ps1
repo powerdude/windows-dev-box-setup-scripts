@@ -51,7 +51,7 @@ executeScript "Browsers.ps1";
 
 choco install -y powershell-core
 choco install -y azure-cli
-choco install -y azcopy
+#choco install -y azcopy
 #choco install -y azurepowershell
 Install-Module -Force Az
 choco install -y microsoftazurestorageexplorer
