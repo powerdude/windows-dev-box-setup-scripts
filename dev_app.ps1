@@ -55,7 +55,7 @@ choco install -y powershell-core
 #choco install -y azurepowershell
 #Install-Module -Force Az
 choco install -y microsoftazurestorageexplorer
-choco install -y terraform
+#choco install -y terraform
 
 #--- Tools ---
 #--- Installing VS and VS Code with Git
@@ -110,21 +110,21 @@ choco install -y jre8
 choco install -y javaruntime
 choco install -y lastpass
 choco install -y myharmony
-choco install -y openvpn
+#choco install -y openvpn
 choco install -y pia
-choco install -y royalts
+#choco install -y royalts
 choco install -y rainmeter
 choco install -y pdf24 #cutepdf
 choco install -y bingdesktop
 choco install -y winmerge
-choco install -y picard
-choco install -y putty
+#choco install -y picard
+#choco install -y putty
 
 #Other dev tools
 choco install -y fiddler
-choco install -y NugetPackageExplorer
-choco install -y windbg
-choco install -y linqpad
+#choco install -y NugetPackageExplorer
+#choco install -y windbg
+#choco install -y linqpad
 #choco install -y ncrunch.vs2017 # --version 3.22.1 
 choco install -y resharper-platform
 #choco install -y githubforwindows
