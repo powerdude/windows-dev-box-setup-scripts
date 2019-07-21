@@ -92,7 +92,8 @@ choco install -y flashplayerplugin
 choco install -y autohotkey
 #choco install -y autohotkey-compiler
 choco install -y scite4autohotkey
-#choco install -y office365proplus 
+#choco install -y 
+e365proplus 
 choco install -y onenote
 choco install -y trillian 
 choco install -y wiztree 
@@ -117,6 +118,7 @@ choco install -y rainmeter
 choco install -y pdf24 #cutepdf
 choco install -y bingdesktop
 choco install -y winmerge
+choco install -y office365proplus
 #choco install -y picard
 #choco install -y putty
 
