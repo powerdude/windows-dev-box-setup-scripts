@@ -23,7 +23,10 @@ function executeScript {
 	iex ((new-object net.webclient).DownloadString("$helperUri/$script"))
 }
 
-if((test-path -path d:\) -and !(test-path -path d:\Downloads)) {
+write-host "d drive" (test-path -path d:)
+write-host "downloads directory exist" (test-path -path d:\downloads)
+
+if((test-path -path d:\) ) {
 write-host "moving libraries..."
 Move-LibraryDirectory "My Video" "D:\Videos"
 Move-LibraryDirectory "My Pictures" "D:\Pictures"
@@ -66,7 +69,7 @@ choco install -y microsoftazurestorageexplorer
 # visualstudio2017professional
 # visualstudio2017enterprise
 
-choco install -y visualstudio2019enterprise --package-parameters="'--add Microsoft.VisualStudio.Component.Git'"
+choco install -y visualstudio2019enterprise 
 Update-SessionEnvironment #refreshing env due to Git install
 
 #--- UWP Workload and installing Windows Template Studio ---
@@ -85,15 +88,14 @@ choco install -y chocolateygui
 choco install -y revo-uninstaller
 
 #Other essential tools
-choco install -y dontnet3.5
+choco install -y dotnet3.5
 #choco install -y adobereader
 choco install -y rdmfree #rdcman
 choco install -y flashplayerplugin
 choco install -y autohotkey
 #choco install -y autohotkey-compiler
 choco install -y scite4autohotkey
-#choco install -y 
-e365proplus 
+#choco install -y office365proplus 
 choco install -y onenote
 choco install -y trillian 
 choco install -y wiztree 
@@ -107,8 +109,8 @@ choco install -y glaryutilities-free
 choco install -y synctrayzor
 choco install -y notepadplusplus
 choco install -y vlc
-choco install -y jre8
-choco install -y javaruntime
+#choco install -y jre8
+#choco install -y javaruntime
 choco install -y lastpass
 choco install -y myharmony
 #choco install -y openvpn
