@@ -1,7 +1,7 @@
 # Description: Boxstarter Script
 # Author: Microsoft
 # Common settings for azure devops
-choco config set cacheLocation d:\chocolatey
+#choco config set cacheLocation d:\chocolatey
 
 Disable-UAC
 $ConfirmPreference = "None" #ensure installing powershell modules don't prompt on needed dependencies
@@ -42,7 +42,7 @@ Move-LibraryDirectory "Downloads" "D:\Downloads"
 #--- Setting up Windows ---
 executeScript "FileExplorerSettings.ps1";
 executeScript "SystemConfiguration.ps1";
-executeScript "RemoveDefaultApps.ps1";
+#executeScript "RemoveDefaultApps.ps1";
 executeScript "CommonDevTools.ps1";
 executeScript "Browsers.ps1";
 
@@ -69,14 +69,14 @@ choco install -y microsoftazurestorageexplorer
 # visualstudio2017professional
 # visualstudio2017enterprise
 
-choco install -y visualstudio2019enterprise 
-Update-SessionEnvironment #refreshing env due to Git install
+#choco install -y visualstudio2019enterprise 
+#Update-SessionEnvironment #refreshing env due to Git install
 
 #--- UWP Workload and installing Windows Template Studio ---
-choco install -y visualstudio2019-workload-azure
-choco install -y visualstudio2019-workload-netcoretools
-choco install -y visualstudio2019-workload-netweb
-choco install -y visualstudio2019-workload-netcrossplat
+#choco install -y visualstudio2019-workload-azure
+#choco install -y visualstudio2019-workload-netcoretools
+#choco install -y visualstudio2019-workload-netweb
+#choco install -y visualstudio2019-workload-netcrossplat
 #choco install -y visualstudio2019-workload-universal
 #choco install -y visualstudio2019-workload-manageddesktop
 #choco install -y visualstudio2019-workload-nativedesktop
